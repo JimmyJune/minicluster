@@ -4,6 +4,5 @@
   become: true
   tasks:
     - name: update apt packages
-      apt:
-        become: yes
+      ansible.builtin.apt:
         update_cache: yes
